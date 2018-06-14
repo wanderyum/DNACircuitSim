@@ -1,0 +1,41 @@
+# First make sure to update pip:
+#     $ sudo pip install --upgrade pip
+#
+# Then you probably want to work in a virtualenv (optional):
+#     $ sudo pip install --upgrade virtualenv
+# Or if you prefer you can install virtualenv using your favorite packaging
+# system. E.g., in Ubuntu:
+#     $ sudo apt-get update && sudo apt-get install virtualenv
+# Then:
+#     $ cd $my_work_dir
+#     $ virtualenv my_env
+#     $ . my_env/bin/activate
+#
+# Then install these requirements:
+#     $ pip install --upgrade -r requirements.txt
+# 
+# Finally, start jupyter:
+#     $ jupyter notebook
+#
+
+
+##### Core scientific packages
+jupyter==1.0.0
+matplotlib==2.2.2
+numpy==1.14.3
+pandas==0.22.0
+scipy==1.1.0
+
+
+##### Extra packages (optional)
+
+# Nice utility to diff Jupyter Notebooks.
+nbdime==0.4.1
+
+# May be useful with Pandas for complex "where" clauses (e.g., Pandas
+# tutorial).
+numexpr==2.6.5
+
+# Optional: these are useful Jupyter extensions, in particular to display the
+# table of contents
+jupyter-contrib-nbextensions==0.5.0
