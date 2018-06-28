@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-time = 100
+time = 500
 space = time // 5
 ka = 1e+4
 ini = [1e-6, 1e-6, 0, 0]
@@ -15,7 +15,7 @@ def differ(ini, ka, time, space, ret='delta'):
     for i in range(space+1):
         A[i], B[i] = ini[:2]
     delta = np.linspace(0, 0, time+space+1)
-    noise = np.random.randn(1, time+space+1) * np.sqrt(ini[0]*ini[1])/200
+    noise = np.random.randn(1, time+space+1) * np.sqrt(ini[0]*ini[1])/150
 
     for i in range(time):
         delta[space+i+1] = ka * A[space+i] * B[space+i]
@@ -41,24 +41,24 @@ x = np.linspace(0, time+space, time+space+1)
 
 plt.figure(figsize=(15,4.5))
 plt.subplot(131)
-plt.plot(x, y, label='experimental-[C]', color='C0', linewidth=2)
+plt.plot(x, y*1e6, '.', label='experimental-[C]', color='C0', linewidth=2)
 plt.xlabel('Time / steps')
-plt.ylabel('Concentration / M')
+plt.ylabel('Concentration / uM')
 plt.legend()
 
 y = differ(ini, ka, time, space, ret='C')
 plt.subplot(132)
-plt.plot(x, y, label='simulative-[C]', color='C0', linewidth=2)
+plt.plot(x, y*1e6, label='simulative-[C]', color='C0', linewidth=1.5)
 plt.xlabel('Time / steps')
-plt.ylabel('Concentration / M')
+plt.ylabel('Concentration / uM')
 
 plt.legend()
 
 y = differ(ini, ka, time, space, ret='')
 plt.subplot(133)
-plt.plot(x, y, label='simulative-rate', color='C0', linewidth=2)
+plt.plot(x, y*1e6, '.', label='simulative-rate', color='C0', linewidth=2)
 plt.xlabel('Time / steps')
-plt.ylabel('Rate / M $\cdot$ Step$^{-1}$')
+plt.ylabel('Rate / uM $\cdot$ Step$^{-1}$')
 plt.legend()
 #plt.show()
 plt.tight_layout()
