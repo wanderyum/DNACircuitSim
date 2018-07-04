@@ -1,8 +1,8 @@
 # DNACircuitSim
 This project aims at teaching you the fundamentals of simulations of DNA circuits in python. 
-It contains the mathematical description and the data used in [paper](http://dx.doi.org/10.1088/0957-4484/25/7/075602) are taken as an example to illustrate how to realize the mathematical. 
+It contains the mathematical description and the data used in [paper](https://doi.org/10.1039%2Fc7nr06484e) are taken as an example to illustrate how to realize the mathematical. 
 
-Three parts make up the whole project:
+This project consists of three parts:
 - Part1 - The basic syntax for python and the libraries that may be used in the simulations
 - Part2 - Modeling and fitting the experimental data
 - Appendix - Miscellaneous items that may be helpful for the simulations
