@@ -2,6 +2,11 @@
 This project aims at teaching you the fundamentals of simulations of DNA circuits in python. 
 It contains the mathematical description and the data used in [paper](http://dx.doi.org/10.1088/0957-4484/25/7/075602) are taken as an example to illustrate how to realize the mathematical. 
 
+Three parts make up the whole project:
+- Part1 - The basic syntax for python and the libraries that may be used in the simulations
+- Part2 - Modeling and fitting the experimental data
+- Appendix - Miscellaneous items that may be helpful for the simulations
+
 Simply open the [Jupyter](http://jupyter.org/) notebooks you are interested in:
 
 * Using [jupyter.org's notebook viewer](http://nbviewer.jupyter.org/github/ageron/handson-ml/blob/master/index.ipynb)
