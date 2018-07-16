@@ -3,8 +3,9 @@ This project aims at teaching you the fundamentals of simulations of DNA circuit
 It contains the mathematical description and the data used in [paper](https://doi.org/10.1039%2Fc7nr06484e) are taken as an example to illustrate how to realize the mathematical. 
 
 This project consists of three parts:
-- Part1 - The basic syntax for python and the libraries that may be used in the simulations
-- Part2 - Modeling and fitting the experimental data
+- Part1 - The basics in Python3
+- Part2 - The libraries and functions that may be used in the simulations
+- Part3 - Modeling and fitting the experimental data
 - Appendix - Miscellaneous items that may be helpful for the simulations
 
 Simply open the [Jupyter](http://jupyter.org/) notebooks you are interested in:
